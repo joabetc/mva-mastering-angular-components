@@ -8,7 +8,9 @@
     <form>
         <div>
             <label for="new-color-input">New Color:</label>
-            <input type="text" id="new-color-input" name="newColor" [(ngModel)]="newColor">
+            <input type="text" id="new-color-input" 
+                name="newColor" [(ngModel)]="newColor" 
+                (keyup.enter)="addColor()">
         </div>
         <button type="button" (click)="addColor()">Add Color</button>
     </form>
